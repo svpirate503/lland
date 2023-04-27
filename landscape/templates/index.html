@@ -1,0 +1,232 @@
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+<ul>
+  <li class="active"><a href="/">Home</a></li>
+  <li><a id="contact" href="#">Contact</a></li>
+  <li><a href="{% url 'services' %}">Services</a></li>
+</ul> 
+
+<h3 style="text-align: center;">Landscaping Services</h3>
+
+
+<h2 style="text-align: center;">Commercial Landscaping Services.</h2>
+<div class="conna">
+<p style="text-align: center;">
+
+MasterTys Landscaping Service, we understand that your time as a property management professional is extremely valuable. Our team is here to help you determine what combination of core services will take your property to the next level. We will work with you to understand how your landscaping plan should change from season to season while planning ahead to achieve continual growth and improvement. When you partner with us, you can have Green Peace of Mind knowing that we will be there for you every step of the way.
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="outer-grid">
+  {% for x in postt %}
+
+  <div class="inner-grid">
+
+
+      <div class="desc">
+        <img src="{{x.image.url}}" alt="Image 1" >
+        
+          <figcaption>{{x.description}}.</figcaption>
+
+
+        </div>
+    
+
+
+  </div>
+  {% endfor %}
+
+  </div>
+
+    
+  <footer id="foot">
+    <table>
+      <div class="footer-wrapper">
+      <tr>
+        <td>Teléfono:</td>
+        <td>+240765454</td>
+      </tr>
+      <tr>
+        <td>Correo electrónico:</td>
+        <td><a href="mailto:tu_correo@ejemplo.com">mastertys@gmail.com</a></td>
+      </tr>
+    </table>
+    <p style="padding-top: 1rem;" class="footer-text">MasterTys &copy; 2023</p>
+  </footer>
+  </div>>
+
+
+
+    <style>
+
+
+
+
+
+h3{
+margin-left: 15px;
+font-size: 36px !important;
+text-shadow: 1px 1px 1px #000;
+padding: 15px 0;
+margin-bottom: 10px;
+font-family: 'oswald', sans-serif;
+font-weight: 300;
+color: #7fbd41;
+}
+
+p{
+
+color: #666;
+line-height: 1.5rem;
+font-size: 20px;
+margin-top: 0;
+margin-bottom: 1rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+h2{
+  margin: 30px 0 30px;
+  margin-top: 0 !important;
+font-size: x-large;
+
+
+font-weight: 600;
+color: #444;
+line-height: 1.4em;
+font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+
+
+
+.inner-grid {
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+}
+
+
+
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+}
+
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+}
+
+
+.desc{
+ 
+ 
+  padding: 1rem 2.50rem 1rem 1rem;
+}
+
+  
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+td,a{
+  color: white;
+}
+</style>
+
+
+
+<script>
+  const link = document.querySelector('#contact');
+
+// Añadir un escuchador de eventos para el clic
+link.addEventListener('click', (event) => {
+  // Prevenir la acción predeterminada del enlace
+  event.preventDefault();
+
+  // Obtener la posición del elemento a donde se desea hacer scroll
+  const target = document.querySelector('#foot');
+  const targetPosition = target.getBoundingClientRect().top;
+
+  // Hacer scroll suavemente hacia abajo
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
+});
+
+
+
+</script>

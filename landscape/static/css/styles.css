@@ -1,0 +1,74 @@
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+
+
+  font-size: 18px;
+  line-height: 1.1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+	font-family: 'oswald', sans-serif;
+  font-weight: 300;
+	color: #7fae51;
+  text-shadow: 1px 1px 1px #000;
+
+
+}
+
+
+.cona{
+  margin-bottom: 30px;
+
+}
+.con{
+font-size: 19px;
+line-height: 31px;
+padding: 15px 0;
+font-family: 'PT Serif',serif;
+color: #010101;
+min-height: 300px;
+}
+.cp-text{ 
+  
+  color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    
+
+}
+
+
