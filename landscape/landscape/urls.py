@@ -17,13 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings #new
 from django.conf.urls.static import static
-from post import views
-
+from post.views import services,index
+from contact.views import contact_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index),
-    path('services/',views.services,name='services')
+    path('',index),
+    path('services/',services,name='services'),
+    path('contact/',contact_view,name="contact")
 ]+static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
 

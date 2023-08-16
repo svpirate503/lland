@@ -1,0 +1,25 @@
+{% load static %}
+
+<html>
+
+<link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}">
+<form method="post">
+
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+    <input type="submit" value="Send">
+</form>
+</html>
+
+
+<script>
+    input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+   }
+   
+</script>
