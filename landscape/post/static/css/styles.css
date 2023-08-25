@@ -1,0 +1,127 @@
+
+h3{
+    margin-left: 15px;
+    font-size: 36px !important;
+    text-shadow: 1px 1px 1px #000;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    font-family: 'oswald', sans-serif;
+    font-weight: 300;
+    color: #7fbd41;
+    }
+    
+    p{
+    
+    color: #666;
+    line-height: 1.5rem;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    h2{
+      margin: 30px 0 30px;
+      margin-top: 0 !important;
+    font-size: x-large;
+    
+    
+    font-weight: 600;
+    color: #444;
+    line-height: 1.4em;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    }
+    
+    
+    
+    .inner-grid {
+       flex: 25%;
+       max-width: 25%;
+       padding: 0 4px;
+    }
+    .inner-grid img {
+       margin-top: 8px;
+       width: 100%;
+       padding: 10px;
+    }
+    
+    
+    
+    .outer-grid {
+       display: flex;
+       flex-wrap: wrap;
+       padding: 0 4px;
+    }
+    
+    @media screen and (max-width: 600px) {
+       .inner-grid {
+          flex: 100%;
+          max-width: 100%;
+       }
+    }
+    
+    
+    .desc{
+     
+     
+      padding: 1rem 2.50rem 1rem 1rem;
+    }
+    
+      
+      
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;
+    }
+    .active {
+        background-color: #4CAF50;
+    }
+    
+    
+    
+    footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px 0;
+    }
+    
+    .footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    
+    td,a{
+      color: white;
+    }
